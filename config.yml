@@ -95,7 +95,7 @@ gui:
   #   authorColors:
   #     "*": "#fc1a70"
   #
-  # Patrick's Gruvebox Theme
+  # Gruvebox Theme
   # theme:
   #   activeBorderColor: ['#b8bb26']
   #   inactiveBorderColor: ['#3c3836']
