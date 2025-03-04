@@ -1,0 +1,2 @@
+# lazygit-config
+Lazygit configuration
