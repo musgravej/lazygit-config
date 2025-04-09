@@ -188,3 +188,9 @@ gui:
   # authorColors:
   #   '*': '#b4befe'
 
+customCommands:
+  - key: "N"
+    context: "files"
+    command: "git commit --no-verify"
+    description: "Commit without hooks"
+    subprocess: true
