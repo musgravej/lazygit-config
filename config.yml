@@ -10,11 +10,14 @@ gui:
   showListFooter: true # for seeing the '5 of 20' message in list panels
   experimentalShowBranchHeads: false # visualize branch heads with (*) in commits list
   nerdFontsVersion: "3"
+  fetchInterval: 300 # in seconds, for auto-fetching, every 5 minutes
+
   customIcons:
     extensions:
       ".py":
         icon: "\U000F0320"
         color: "#fafa05"
+
   # Color theme choices
   #
   # Tokyo Night - Night
