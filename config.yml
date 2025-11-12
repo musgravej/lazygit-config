@@ -1,70 +1,75 @@
 git:
+  # Icons: https://gist.github.com/kudzidube7/5798f80e70b9a243186c183a119adce6
   # The main branches. We colour commits green if they belong to one of these branches,
   # so that you can easily see which commits are unique to your branch (coloured in yellow)
   mainBranches: [master, main]
 gui:
   border: 'rounded' # one of 'single' | 'double' | 'rounded' | 'hidden'
-  showIcons: false
+  # showIcons: false
   showFileTree: true # for rendering changes files in a tree format
   showListFooter: true # for seeing the '5 of 20' message in list panels
   experimentalShowBranchHeads: false # visualize branch heads with (*) in commits list
   nerdFontsVersion: "3"
-
+  customIcons:
+    extensions:
+      ".py":
+        icon: "\U000F0320"
+        color: "#fafa05"
   # Color theme choices
   #
   # Tokyo Night - Night
-  theme:
-    activeBorderColor:
-      - "#ff9e64"
-      - "bold"
-    inactiveBorderColor:
-      - "#27a1b9"
-    searchingActiveBorderColor:
-      - "#ff9e64"
-      - "bold"
-    optionsTextColor:
-      - "#7aa2f7"
-    selectedLineBgColor:
-      - "#283457"
-    cherryPickedCommitFgColor:
-      - "#7aa2f7"
-    cherryPickedCommitBgColor:
-      - "#bb9af7"
-    markedBaseCommitFgColor:
-      - "#7aa2f7"
-    markedBaseCommitBgColor:
-      - "#e0af68"
-    unstagedChangesColor:
-      - "#db4b4b"
-    defaultFgColor:
-      - "#c0caf5"
-  #
-  # Tokyo Night - Moon
   # theme:
   #   activeBorderColor:
-  #     - "#ff966c"
+  #     - "#ff9e64"
   #     - "bold"
   #   inactiveBorderColor:
-  #     - "#589ed7"
+  #     - "#27a1b9"
   #   searchingActiveBorderColor:
-  #     - "#ff966c"
+  #     - "#ff9e64"
   #     - "bold"
   #   optionsTextColor:
-  #     - "#82aaff"
+  #     - "#7aa2f7"
   #   selectedLineBgColor:
-  #     - "#2d3f76"
+  #     - "#283457"
   #   cherryPickedCommitFgColor:
-  #     - "#82aaff"
+  #     - "#7aa2f7"
   #   cherryPickedCommitBgColor:
-  #     - "#c099ff"
+  #     - "#bb9af7"
   #   markedBaseCommitFgColor:
-  #     - "#82aaff"
+  #     - "#7aa2f7"
   #   markedBaseCommitBgColor:
-  #     - "#ffc777"
+  #     - "#e0af68"
   #   unstagedChangesColor:
-  #     - "#c53b53"
+  #     - "#db4b4b"
   #   defaultFgColor:
-  #     - "#c8d3f5"
+  #     - "#c0caf5"
+  #
+  # Tokyo Night - Moon
+  theme:
+    activeBorderColor:
+      - "#ff966c"
+      - "bold"
+    inactiveBorderColor:
+      - "#589ed7"
+    searchingActiveBorderColor:
+      - "#ff966c"
+      - "bold"
+    optionsTextColor:
+      - "#82aaff"
+    selectedLineBgColor:
+      - "#2d3f76"
+    cherryPickedCommitFgColor:
+      - "#82aaff"
+    cherryPickedCommitBgColor:
+      - "#c099ff"
+    markedBaseCommitFgColor:
+      - "#82aaff"
+    markedBaseCommitBgColor:
+      - "#ffc777"
+    unstagedChangesColor:
+      - "#c53b53"
+    defaultFgColor:
+      - "#c8d3f5"
   #
   # Monokai Theme
   # theme:
@@ -137,60 +142,59 @@ gui:
   #     - "#FF5555"
   #   defaultFgColor:
   #     - "#F8F8F2"
+# Catppuccin Mocha Rosewater
+# theme:
+#   activeBorderColor:
+#     - '#f5e0dc'
+#     - bold
+#   inactiveBorderColor:
+#     - '#a6adc8'
+#   optionsTextColor:
+#     - '#89b4fa'
+#   selectedLineBgColor:
+#     - '#313244'
+#   cherryPickedCommitBgColor:
+#     - '#45475a'
+#   cherryPickedCommitFgColor:
+#     - '#f5e0dc'
+#   unstagedChangesColor:
+#     - '#f38ba8'
+#   defaultFgColor:
+#     - '#cdd6f4'
+#   searchingActiveBorderColor:
+#     - '#f9e2af'
+#
+# authorColors:
+#   '*': '#b4befe'
 
-  # Catppuccin Mocha Rosewater
-  # theme:
-  #   activeBorderColor:
-  #     - '#f5e0dc'
-  #     - bold
-  #   inactiveBorderColor:
-  #     - '#a6adc8'
-  #   optionsTextColor:
-  #     - '#89b4fa'
-  #   selectedLineBgColor:
-  #     - '#313244'
-  #   cherryPickedCommitBgColor:
-  #     - '#45475a'
-  #   cherryPickedCommitFgColor:
-  #     - '#f5e0dc'
-  #   unstagedChangesColor:
-  #     - '#f38ba8'
-  #   defaultFgColor:
-  #     - '#cdd6f4'
-  #   searchingActiveBorderColor:
-  #     - '#f9e2af'
-  #
-  # authorColors:
-  #   '*': '#b4befe'
-
-  # Catppuccin Mocha Sapphire
-  # theme:
-  #   activeBorderColor:
-  #     - '#74c7ec'
-  #     - bold
-  #   inactiveBorderColor:
-  #     - '#a6adc8'
-  #   optionsTextColor:
-  #     - '#89b4fa'
-  #   selectedLineBgColor:
-  #     - '#313244'
-  #   cherryPickedCommitBgColor:
-  #     - '#45475a'
-  #   cherryPickedCommitFgColor:
-  #     - '#74c7ec'
-  #   unstagedChangesColor:
-  #     - '#f38ba8'
-  #   defaultFgColor:
-  #     - '#cdd6f4'
-  #   searchingActiveBorderColor:
-  #     - '#f9e2af'
-  #
-  # authorColors:
-  #   '*': '#b4befe'
+# Catppuccin Mocha Sapphire
+# theme:
+#   activeBorderColor:
+#     - '#74c7ec'
+#     - bold
+#   inactiveBorderColor:
+#     - '#a6adc8'
+#   optionsTextColor:
+#     - '#89b4fa'
+#   selectedLineBgColor:
+#     - '#313244'
+#   cherryPickedCommitBgColor:
+#     - '#45475a'
+#   cherryPickedCommitFgColor:
+#     - '#74c7ec'
+#   unstagedChangesColor:
+#     - '#f38ba8'
+#   defaultFgColor:
+#     - '#cdd6f4'
+#   searchingActiveBorderColor:
+#     - '#f9e2af'
+#
+# authorColors:
+#   '*': '#b4befe'
 
 customCommands:
   - key: "N"
     context: "files"
     command: "git commit --no-verify"
     description: "Commit without hooks"
-    subprocess: true
+    output: terminal
