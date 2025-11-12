@@ -9,6 +9,7 @@ gui:
   showListFooter: true # for seeing the '5 of 20' message in list panels
   experimentalShowBranchHeads: false # visualize branch heads with (*) in commits list
   nerdFontsVersion: "3"
+  fetchInterval: 300 # in seconds, for auto-fetching, every 5 minutes
 
   # Color theme choices
   #
@@ -193,4 +194,4 @@ customCommands:
     context: "files"
     command: "git commit --no-verify"
     description: "Commit without hooks"
-    subprocess: true
+    output: terminal
